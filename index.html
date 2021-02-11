@@ -24,6 +24,10 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="shortcut icon" href="images/favicon.png">
+
+	<script src="https://unpkg.com/@codersrank/summary@0.9.11/codersrank-summary.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/skills-chart@0.9.19/codersrank-skills-chart.min.js"></script>
+	<script src="https://unpkg.com/@codersrank/activity@0.9.14/codersrank-activity.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -216,10 +220,14 @@
 						</div>
 
 					</div>
-
+					
+					
 					<div id="page-3" class="page three">
 						<h2 class="heading">Skills</h2>
+						<codersrank-summary username="rutaks" branding=false badges="3"></codersrank-summary>
 						<h5>Languages</h5>
+						<codersrank-skills-chart username="rutaks" labels legend tooltip skills="JavaScript, C, C++, Dart, Python, Java, Swift, TypeScript, Kotlin" ></codersrank-skills-chart>
+						<br>
 						<div class="row progress-circle mb-5">
 							<div class="col-lg-4 mb-4">
 								<div class="bg-white rounded-lg shadow p-4">
@@ -358,7 +366,8 @@
 							</div>
 						</div>
 						<div class="row">
-
+							<h5>My Activity</h5>
+							<codersrank-activity username="rutaks" branding=false></codersrank-activity>
 						</div>
 					</div>
 
